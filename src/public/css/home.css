@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.app {
+  margin: 0 74.5px; }
+
+/*  common */
+.upper-text {
+  text-transform: uppercase; }
+
+.none-style {
+  list-style: none; }
+
+/*  common */
+#sidebar .sidebar-logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  padding: 16px;
+  letter-spacing: 5px;
+  line-height: 36px; }
+
+#sidebar .sidebar-logo > p {
+  margin: 10px 0; }
+
+.sidebar-items {
+  padding: 64px 16px;
+  font-size: 18px; }
