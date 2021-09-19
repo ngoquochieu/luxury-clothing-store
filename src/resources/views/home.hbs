@@ -1,39 +1,53 @@
-<div class="container">
-    <div class="row">
-        {{!-- Sidebar  --}}
-        <div class="col-second">
-            <div id="sidebar">
-                <div class="sidebar-logo upper-text">
-                    <p>logo</p>
-                </div>
-                <div class="sidebar-items ">
-                    <ul class="none-style">
-                        <li>Shirts</li>
-                        <li>Dresses</li>
-                        <li>
-                            <ul class="sidebar-sub-items none-style">
-                                <li>Skinny</li>
-                                <li>Relaxed</li>
-                                <li>Bootcut</li>
-                                <li>Straight</li>
+    <div class="container">
+            <div class="row">
+                <div class="col-second">
+                    <div id="sidebar">
+                        <div class="sidebar-logo upper-text">
+                            <p>logo</p>
+                        </div>
+                        <div class="sidebar-cates">
+                            <ul class="cates-list none-decoration none-style">
+                                <li><a href="">Shirts</a></li>
+                                <li><a href="">Dresses</a></li>
+                                <li class="jeans-js">
+                                    <a href="#" class="">
+                                        Jeans <i class="fas fa-caret-down"></i>
+                                    </a>
+                                    <div class="sidebar-sub-items sub-jeans-js ">
+                                        <ul class="sub-items-content none-style">
+                                            <li><a href="">Skinny</a></li>
+                                            <li><a href="">Relaxed</a></li>
+                                            <li><a href="">Bootcut</a></li>
+                                            <li><a href="">Straight</a></li>
+                                        </ul>
+                                    </div>       
+                                </li>
+                                <li><a href="">Jackets</a></li>
+                                <li><a href="">Gymwear</a></li>
+                                <li><a href="">Blazers</a></li>
+                                <li><a href="">Shoes</a></li>
                             </ul>
-                        </li>
-                        <li>Jackets</li>
-                        <li>Gymwear</li>
-                        <li>Blazers</li>
-                        <li>Shoes</li>
-                    </ul>
+                        </div>
+                        <div class="sidebar-contract">
+                            <p>Contract</p>
+                            <p>Newsletter</p>
+                            <p>Subscribe</p>
+                        </div>   
+                    </div>
                 </div>
-                <div class="sidebar-contract">
-                    <p>Contract</p>
-                    <p>Newsletter</p>
-                    <p>Subscribe</p>
-                </div>
+                <div class="col-second">
 
+                </div>    
             </div>
-        </div>
-        <div class="col-second">
-
-        </div>
     </div>
-</div>
+
+
+    {{!-- <script>
+        const jeans_js = document.querySelector('.jeans-js');
+        const sub_jeans_js = document.querySelector('.sub-jeans-js');
+        jeans_js.addEventListener('click', () => {
+            sub_jeans_js.classList.contains('open')|| "" ? 
+                sub_jeans_js.classList.remove('open') : sub_jeans_js.classList.add('open');
+        })
+    
+    </script> --}}
