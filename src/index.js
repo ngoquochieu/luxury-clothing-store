@@ -10,12 +10,20 @@ const port = 3000;
 db.connect();
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static('util'));
+app.use(express.static(path.join(__dirname, 'util')));
 
 app.set('views', path.join(__dirname, 'resources/views'));
 //Set engine
 app.engine('hbs', handlebars({
-    extname: '.hbs'
+  defaultLayout: 'main',
+  extname: '.hbs',
+  helpers: {
+    section: function(name, options) {
+       if(!this._sections) this._sections = {};
+        this._sections[name] = options.fn(this); 
+        return null;
+    }
+  }
 }));
 
 app.set('view engine', 'hbs');

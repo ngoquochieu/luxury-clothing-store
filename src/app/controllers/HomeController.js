@@ -4,8 +4,9 @@ class HomeController {
     index(req, res, next) {
 
        res.render('home', {
+           title : 'Home page',
            style: 'home.css',
-           scripts: 'home.js',
+           script: 'home.js',
        });
         // Users.find()
         //     .then(items => res.json(items))
