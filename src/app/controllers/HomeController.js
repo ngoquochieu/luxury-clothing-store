@@ -7,6 +7,7 @@ class HomeController {
            title : 'Home page',
            style: 'home.css',
            script: 'home.js',
+           nav: 'nav.css',
        });
         // Users.find()
         //     .then(items => res.json(items))

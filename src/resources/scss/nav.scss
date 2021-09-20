@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.app {
+.container {
     margin: 0 74.5px;
     
 }
@@ -26,10 +26,16 @@
     padding: 8px 16px;
 }
 
+.pl-16 {
+    padding-left: 16px;
+}
+
 /*  common */
 #sidebar {
     width: 250px;
     height: 100%;
+    position: fixed;
+    overflow: auto;
 
 }
 
@@ -48,36 +54,48 @@
 }
 
 .sidebar-cates {
-    width: 100%;
-    padding: 64px 16px;
-    font-size: 18px;
-    
+    padding: 64px 0;
 }
-.sub-items-content >li:hover >a,
-.cates-list > li:hover > a {
+.cates-list li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #757575;   
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    line-height: 27px;
+
+}
+.sub-items-content >li:hover> a,
+.cates-list >li:hover >a{
     background-color: #ccc;
     color: #000;
+
 }
 
-.cates-list  li  a {
-    width: 100%;
-    padding: 8px 0;
-    font-weight: 900;
-    display: block;
-    opacity: 0.7 !important;
-    text-decoration: none;
-    color: #000;
-    
-}
-.sidebar-sub-items li{
-    display: block;
-}
 .sidebar-sub-items {
-    font-size: 15px;
+    padding: 12px 24px;
     display: none;
 }
+
 .sidebar-sub-items.open {
     display: block;
 }
 
+.sub-items-content li a {
+    display: block;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 22px;
+    
+}
+
+.sidebar-contract p {
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #757575;
+    line-height: 22px;
+}
 
